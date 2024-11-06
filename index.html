@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronaldo Haqida Savollar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ronaldoga savol bering!</h1>
+        <input type="text" id="question" placeholder="Savolingizni kiriting">
+        <button onclick="getAnswer()">Javobni olish</button>
+        <p id="answer"></p>
+    </div>
+
+    <script>
+        function getAnswer() {
+            const question = document.getElementById('question').value.trim().toLowerCase();
+            const answerContainer = document.getElementById('answer');
+
+            if (!question) {
+                answerContainer.textContent = "Iltimos, savolni kiriting.";
+                return;
+            }
+
+            let answer = "Bu savolga javob topilmadi.";
+
+            // Ronaldo haqida javoblar
+            if (question.includes("necha yoshsan") || question.includes("yosh")) {
+                answer = "Men 39 yoshdaman.";
+            } else if (question.includes("isming nima") || question.includes("ism")) {
+                answer = "Mening ismim Cristiano Ronaldo.";
+            } else if (question.includes("qayerda yashaysan") || question.includes("qayerda")) {
+                answer = "Men Portugaliyada yashayman.";
+            } else if (question.includes("necha marta ballon d'or yutgan") || question.includes("ballon d'or")) {
+                answer = "Men 5 marta Ballon d'Or sovrinini qo'lga kiritdim.";
+            } else if (question.includes("ronaldo qanday mashinalarga ega") || question.includes("mashinalar")) {
+                answer = "Men bir nechta yuqori darajadagi mashinalarga egaman, jumladan Bugatti Veyron, Ferrari va Lamborghini.";
+            } else if (question.includes("ronaldo oilasi haqida") || question.includes("oila")) {
+                answer = "Men oilam bilan juda yaqindan aloqada bo'lib, ota-onam va farzandlarimni juda sevaman.";
+            } else if (question.includes("ronaldo necha bola bor") || question.includes("bolalari")) {
+                answer = "Menimcha, 5 farzandim bor.";
+            } else if (question.includes("ronaldo qaysi klubda boshlagan") || question.includes("boshqa klub")) {
+                answer = "Men o'z faoliyatimni 'Sporting CP' klubida boshladim.";
+            } else if (question.includes("ronaldo qanday shaxs") || question.includes("karakteri")) {
+                answer = "Men juda motivatsiyali, ishga yondashuvi kuchli va jamoaga sodiq insonman.";
+            } else if (question.includes("ronaldo eng yaxshi goli") || question.includes("eng yaxshi gol")) {
+                answer = "Menimcha, eng yaxshi golim 2009-yilda 'Manchester United' bilan 'FC Porto'ga qarshi urgan gollarimdan biri.";
+            } else if (question.includes("ronaldo necha marta chempionlar ligasini yutgan") || question.includes("chempionlar ligasi")) {
+                answer = "Men 5 marta Chempionlar Ligasi sovrinini qo'lga kiritdim.";
+            } else if (question.includes("ronaldo ijtimoiy tarmoqlar") || question.includes("instagram")) {
+                answer = "Men Instagramda juda faolman, millionlab obunachilarim bor.";
+            } else if (question.includes("ronaldo qachon futboldan ketadi") || question.includes("futbolni tark etadi")) {
+                answer = "Men hali futbolni tark etishni o'ylamayapman, lekin barcha futbolchilar uchun qarorlar vaqt o'tishi bilan o'zgaradi.";
+            } else if (question.includes("isming nima") || question.includes("ism")) {
+        answer = "Mening ismim Cristiano Ronaldo.";
+    } else if (question.includes("qayerda yashaysan") || question.includes("qayerda")) {
+        answer = "Men Portugaliyada yashayman.";
+    } else if (question.includes("necha marta ballon d'or yutgan") || question.includes("ballon d'or")) {
+        answer = "Men 5 marta Ballon d'Or sovrinini qo'lga kiritdim.";
+    } else if (question.includes("ronaldo qanday mashinalarga ega") || question.includes("mashinalar")) {
+        answer = "Men bir nechta yuqori darajadagi mashinalarga egaman, jumladan Bugatti Veyron, Ferrari va Lamborghini.";
+    } else if (question.includes("ronaldo oilasi haqida") || question.includes("oila")) {
+        answer = "Men oilam bilan juda yaqindan aloqada bo'lib, ota-onam va farzandlarimni juda sevaman.";
+    } else if (question.includes("ronaldo necha bola bor") || question.includes("bolalari")) {
+        answer = "Menimcha, 5 farzandim bor.";
+    } else if (question.includes("ronaldo qaysi klubda boshlagan") || question.includes("boshqa klub")) {
+        answer = "Men o'z faoliyatimni 'Sporting CP' klubida boshladim.";
+    } else if (question.includes("ronaldo qanday shaxs") || question.includes("karakteri")) {
+        answer = "Men juda motivatsiyali, ishga yondashuvi kuchli va jamoaga sodiq insonman.";
+    } else if (question.includes("ronaldo eng yaxshi goli") || question.includes("eng yaxshi gol")) {
+        answer = "Menimcha, eng yaxshi golim 2009-yilda 'Manchester United' bilan 'FC Porto'ga qarshi urgan gollarimdan biri.";
+    } else if (question.includes("ronaldo necha marta chempionlar ligasini yutgan") || question.includes("chempionlar ligasi")) {
+        answer = "Men 5 marta Chempionlar Ligasi sovrinini qo'lga kiritdim.";
+    } else if (question.includes("ronaldo ijtimoiy tarmoqlar") || question.includes("instagram")) {
+        answer = "Men Instagramda juda faolman, millionlab obunachilarim bor.";
+    } else if (question.includes("ronaldo qachon futboldan ketadi") || question.includes("futbolni tark etadi")) {
+        answer = "Men hali futbolni tark etishni o'ylamayapman, lekin barcha futbolchilar uchun qarorlar vaqt o'tishi bilan o'zgaradi.";
+    } else if (question.includes("ronaldo eng ko'p gol urgan klub") || question.includes("gollar")) {
+        answer = "Men 'Real Madrid'da eng ko'p gol urgan futbolchiman.";
+    } else if (question.includes("ronaldo eng yaxshi o'yini") || question.includes("eng yaxshi o'yin")) {
+        answer = "Eng yaxshi o'yinimni 'Manchester United'da o'ynaganimda va 'Real Madrid'ga o'tganimda o'tkazdim.";
+    } else if (question.includes("ronaldo qanday mashhur sportchilarni hurmat qiladi") || question.includes("hurmat qiladi")) {
+        answer = "Men Muhammad Ali, Zinedine Zidane va Roger Federer kabi mashhur sportchilarni hurmat qilaman.";
+    } else if (question.includes("ronaldo qaysi jamoa bilan eng ko'p gollar urgan") || question.includes("jamoa")) {
+        answer = "Men 'Real Madrid' jamoasida eng ko'p gol urdim.";
+    } else if (question.includes("ronaldo 2024-yilni kutmoqda mi?") || question.includes("kutmoqda")) {
+        answer = "Ha, men 2024-yilda yana yangi yutuqlarga erishishni orziqib kutyapman.";
+    } else if (question.includes("ronaldo nechta o'z vatanini himoya qilgan") || question.includes("terma jamoa")) {
+        answer = "Men 2003-yildan boshlab Portugaliya terma jamoasi uchun o'ynayapman.";
+    } else if (question.includes("ronaldo do'stlarini kimlar") || question.includes("do'stlar")) {
+        answer = "Men uchun eng yaxshi do'stlarim - Xesus Navas va Neymar.";
+    } else if (question.includes("ronaldo sevgan futbol klubi") || question.includes("sevgan klub")) {
+        answer = "Men 'Real Madrid'ni doimo sevib qolaman, lekin hozir 'Al-Nassr'da o'ynayman.";
+    } else if (question.includes("ronaldo olgan mukofotlar") || question.includes("mukofotlar")) {
+        answer = "Men ko'plab mukofotlarni olganman, jumladan, 5 marta Ballon d'Or, 5 marta Chempionlar Ligasida g'olib bo'lish.";
+    } else if (question.includes("ronaldo qaysi futbolchilarni o'rganadi") || question.includes("o'rganadi")) {
+        answer = "Men Zidane va Messi kabi futbolchilarni o'rganish va o'z o'yinimni rivojlantirish uchun ilhom olishni yoqtiraman.";
+    } else if (question.includes("ronaldo qaysi futbol klubida hali o'ynamadi") || question.includes("klublar")) {
+        answer = "Men hali 'Barcelona'da o'ynamaganman, ammo hech narsa mumkin emas.";
+    } else if (question.includes("ronaldo qanday mashg'ulotlar bilan shug'ullanadi") || question.includes("mashg'ulotlar")) {
+        answer = "Men fitness bilan muntazam shug'ullanaman, juda kuchli va tayyor bo'lishim kerak.";
+    } else if (question.includes("ronaldo qachon futboldan ketmoqchi?") || question.includes("ketish")) {
+        answer = "Men hali futbolni tark etishni o'ylamayapman. Yillar o'tib qarorimni qabul qilaman.";
+    } else if (question.includes("ronaldo qanday futboldagi eng yaxshi jamoa") || question.includes("eng yaxshi jamoa")) {
+        answer = "Eng yaxshi jamoa - bu albatta 'Real Madrid', u yerda ko'plab muvaffaqiyatlarga erishdim.";
+    } else if (question.includes("ronaldo mashg'ulotlarga qachon boshlaydi") || question.includes("mashg'ulotlar")) {
+        answer = "Men har kuni ertalab mashg'ulotlarga boshlayman, bunda fitness va futbolni mukammal o'rgatish uchun tayyorman.";
+    } else if (question.includes("ronaldo eng yaxshi raqibi kim") || question.includes("raqib")) {
+        answer = "Eng yaxshi raqibim - Lionel Messi, u juda kuchli va mashhur futbolchi.";
+    } else if (question.includes("ronaldo necha marta 'Manchester United'ni yutgan") || question.includes("Manchester United")) {
+        answer = "Men 'Manchester United' bilan ko'plab mukofotlarni yutdim, jumladan, 3 marta Premier Leagueni.";
+    } else if (question.includes("ronaldo 'Real Madrid'ni yutganmi?") || question.includes("Real Madrid")) {
+        answer = "Ha, men 'Real Madrid' bilan 4 marta Chempionlar Ligasi g'olibi bo'ldim.";
+    } else if (question.includes("ronaldo nechta eng yaxshi golni urgan") || question.includes("eng yaxshi gol")) {
+        answer = "Men bir nechta ajoyib gollar urdim, jumladan, eng mashhurlarimdan biri 'Manchester United'da 'FC Porto'ga qarshi gol.";
+    } else if (question.includes("ronaldo qaysi futbolda eng yaxshi o'ynagan") || question.includes("futbol")) {
+        answer = "Men eng yaxshi o'yinimni 'Real Madrid'da o'tkazganimni hisoblayman.";
+    } else if (question.includes("ronaldo o'zini qanday futbolchi sifatida ko'radi") || question.includes);
+
+            // Javobni ekranda ko'rsatish
+            answerContainer.textContent = answer;
+        }
+    </script>
+</body>
+</html>

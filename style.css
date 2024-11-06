@@ -1,0 +1,81 @@
+/* Umumiy stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Sahifa konteyneri */
+.container {
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Sarlavha */
+h1 {
+    font-size: 28px;
+    color: #2e3d49;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Savol kiritish uchun input */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Javobni ko'rsatish uchun */
+#answer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Tugma */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Javob uchun xabar */
+#answer {
+    font-size: 18px;
+    color: #007bff;
+    padding: 10px;
+    background-color: #e7f3ff;
+    border-radius: 5px;
+    margin-top: 15px;
+}
